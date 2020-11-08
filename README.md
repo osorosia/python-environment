@@ -1,9 +1,9 @@
 # Pythonの環境構築
-Dockerを使ってPython環境を構築します。  
-VS Code拡張機能のRemote-Containersを使うことで、VS Code上でimportも読み込みます。
+Dockerを使ってPython環境を構築します（自分仕様）。  
+VSCode拡張機能のRemote-Containersを使うことで、VSCode上でimport文に赤線が出なくなります。
 
 ## 環境
-- VS Code
+- VSCode
 - Docker
 
 ## 使い方
@@ -12,15 +12,15 @@ VS Code拡張機能のRemote-Containersを使うことで、VS Code上でimport�
 docker-compose up -d
 ```
 ### Remote-Containers
-1. VScodeの左下にある[><]をクリックする
+1. VSCodeの左下にある[><]をクリックする
 2. [Remote-Containers: Reopen in Container]を選択する
 
 
 ## その他
-### コンテナ上に新しいVScode拡張機能を入れたい
+### コンテナ上に新しいVSCode拡張機能を入れたい
 手動で入れるとDockerコンテナを作り直したときにリセットされる。  
--> devcontainer.jsonを修正する。
-```json
+1. devcontainer.jsonを修正する。
+```
 "extensions": [
         "ms-python.python",
         // ここに追加する
