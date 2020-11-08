@@ -1,0 +1,9 @@
+version: "3"
+services:
+  py:
+    container_name: pydocker
+    build: .
+    tty: true
+    volumes: 
+      - .:/app
+    working_dir: /app
